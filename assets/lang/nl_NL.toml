@@ -1,0 +1,593 @@
+Code = "nl_NL"
+
+#Commands
+command_avatar_desc = "Krijg de profielfoto van een gebruiker"
+command_avatar_usage = "y!avatar | y!avatar @Voorbeeldgebruiker#1234"
+
+command_ping_desc = "Pong! Bekijk de reactietijd van de bot"
+command_ping_usage = "y!ping"
+
+command_repeat_desc = "Ik herhaal je volgende bericht!"
+command_repeat_usage = "y!repeat tekst"
+
+command_hug_desc = "Geef of krijg een knuffel!"
+command_hug_usage = "y!hug"
+
+command_pat_desc = "Geef of krijg een klopje"
+command_pat_usage = "y!pat"
+
+command_slap_desc = "Geef een klap"
+command_slap_usage = "y!slap"
+
+command_tickle_desc = "K-kietel iemand!"
+command_tickle_usage = "y!tickle"
+
+command_vote_desc = "Stem op een peiling"
+command_vote_usage = "y!vote pollid\ny!vote pollid optie"
+
+command_createpoll_desc = "Maak een nieuwe peiling voor gebruikers om op te stemmen!"
+command_createpoll_usage = "y!createpoll\ny!createpoll titel"
+
+command_serverinfo_desc = "Krijg informatie over een server"
+command_serverinfo_usage = "y!serverinfo"
+
+command_8ball_desc = "Schud een 8ball!"
+command_8ball_usage = "y!8ball\ny!8ball Zal ik ooit donuts krijgen?"
+
+command_config_desc = "Verander instellingen in je server"
+command_config_usage = "y!config"
+
+command_roulette_desc = "Haal de trekker over in Russische roulette"
+command_roulette_usage = "y!roulette"
+
+command_roulette_join_desc = "Start een potje Russische roulette of sluit je bij een spel aan"
+command_roulette_join_usage = "y!roulette join"
+
+command_roulette_start_desc = "Start een potje Russische roulette"
+command_roulette_start_usage = "y!roulette start"
+
+command_roulette_kick_desc = "Kick een speler van een potje Russisch roulette"
+command_roulette_kick_usage = "y!roulette kick @Voorbeeldgebruiker#1234"
+
+command_roulette_quit_desc = "Verlaat een potje Russisch roulette"
+command_roulette_quit_usage = "y!roulette quit"
+
+command_roulette_players_desc = "Bekijk de huidige spelers"
+command_roulette_players_usage = "y!roulette players"
+
+command_toss_desc = "Gooi een muntje op"
+command_toss_usage = "y!toss"
+
+command_roll_desc = "Gooi een dobbelsteen!"
+command_roll_usage = "y!roll"
+
+command_rolecol_desc = "Verander de kleur van een role"
+command_rolecol_usage = "y!rolecol role name hexcode"
+
+command_userinfo_desc = "Krijg informatie over een gebruiker"
+command_userinfo_usage = "y!userinfo\ny!userinfo @Voorbeeldgebruiker#1234"
+
+command_ban_desc = "Verban iemand"
+command_ban_usage = "y!ban @Voorbeeldgebruiker#1234"
+
+command_kick_desc = "Kick iemand van je server"
+command_kick_usage = "y!kick @Voorbeeldgebruiker#1234"
+
+command_calculate_desc = "Doe een simpele rekensom"
+command_calculate_usage = "y!calculate 2+2"
+
+command_choose_desc = "Kies tussen een paar opties"
+command_choose_usage = "y!choose appel | banaan"
+
+command_roleinfo_desc = "Krijg informatie over een role"
+command_roleinfo_usage = "y!roleinfo Admin"
+
+command_viewpoll_desc = "Bekijk een peiling"
+command_viewpoll_usage = "y!viewpoll peilings-ID"
+
+command_help_desc = "Leer een klein beetje over hoe je de bot moet gebruiken, of krijg hulp voor een commando"
+command_help_usage = "y!help\ny!help commandName"
+
+command_commandlist_desc = "Bekijk een lijst van eigen commando's van deze server"
+command_commandlist_usage = "y!commandlist"
+
+command_donate_desc = "Krijg links om te doneren aan de ontwikkelaar"
+command_donate_usage = "y!donate"
+
+command_goodnight_desc = "Ben je slaperig?"
+command_goodnight_usage = "y!goodnight"
+
+command_langs_desc = "Bekijk een lijst van beschikbare talen"
+command_langs_usage = "y!langs"
+
+command_remindme_desc = "Maak een herinnering aan!"
+command_remindme_usage = "y!remindme Bak koekjes in 30m"
+
+command_role_desc = "Wijs jezelf een aangepaste role toe"
+command_role_usage = "y!role WaterBuffalo"
+
+command_remwarn_desc = "Haal een waarschuwing van iemand weg"
+command_remwarn_usage = "y!remwarn @Voorbeeldgebruiker#1234"
+
+command_slowmode_desc = "Activeer slowmode in een kanaal"
+command_slowmode_usage = "y!slowmode 5m"
+
+command_unmute_desc = "Stop met het dempen van een lid"
+command_unmute_usage = "y!unmute @Voorbeeldgebruiker#1234"
+
+command_warn_desc = "Waarschuw een lid"
+command_warn_usage = "y!warn @Voorbeeldgebruiker#1234 Stealing the cookies"
+
+command_mute_desc = "Demp een lid"
+command_mute_usage = "y!mute @Voorbeeldgebruiker#1234 30m Spam"
+
+command_warnings_desc = "Bekijk de waarschuwingen die een lid gekregen heeft"
+command_warnings_usage = "y!warnings @Voorbeeldgebruiker#1234"
+
+command_roles_desc = "Bekijk de eigen roles van een server"
+command_roles_usage = "y!roles"
+
+command_clear_desc = "Wis berichten in een kanaal"
+command_clear_usage = "y!clear 30"
+
+command_clear_from_desc = "Wis berichten van een gebruiker in een kanaal"
+command_clear_from_usage = "y!clear from @Voorbeeldgebruiker#1234 20"
+
+command_clear_with_desc = "Wis berichten met een woord of zinsdeel"
+command_clear_with_usage = "y!clear with 30 LOL"
+
+command_emojify_desc = "Verander tekst in emoji's"
+command_emojify_usage = "y!emojify hallo wereld!"
+
+command_pokeinfo_desc = "Krijg informatie over een pokemon"
+command_pokeinfo_usage = "y!pokeinfo bulbasaur"
+
+command_reverse_desc = "tsket edreekegmO"
+command_reverse_usage = "y!reverse tekst"
+
+command_scramblr_desc = "Tweet Mashup, maar voor Discord!"
+command_scramblr_usage = "y!scramblr\ny!scramblr @Voorbeeldgebruiker#1234"
+
+command_setlang_desc = "Zet de reactietaal van de server. Kies `default` om terug te gaan naar de standaardtaal."
+command_setlang_usage = "y!setlang nl_NL"
+
+command_selfrole_add_desc = "Voeg een kiesbare role to aan je server"
+command_selfrole_add_usage = "y!selfrole add @Landgenoot\ny!selfrole add Landgenoot"
+
+command_selfrole_remove_desc = "Verwijder een role uit de lijst van kiesbare roles in je server"
+command_selfrole_remove_usage = "y!selfrole remove @Landgenoot\ny!selfrole remove Landgenoot"
+
+command_welcome_setchannel_desc = "Kies het kanaal waar welkom- en vaarwelberichten in worden verzonden"
+command_welcome_setchannel_usage = "y!welcome setchannel #welcome"
+
+command_welcome_removechannel_desc = "Verwijder het welkom- en vaarwelkanaal"
+command_welcome_removechannel_usage = "y!welcome removechannel"
+
+command_welcome_setmsg_desc = "Stel het welkombericht in. Schrijf %user% om de gebruikersnaam van het nieuwe lid te plaatsen, en %muser% om het nieuwe lid te taggen."
+command_welcome_setmsg_usage = "y!welcome setmsg Welkom in de server, %muser%!"
+
+command_muterole_set_desc = "Stel de role in die een gedempt persoon krijgt"
+command_muterole_set_usage = "y!muterole set @Muted"
+
+command_muterole_remove_desc = "Verwijder de demprole"
+command_muterole_remove_usage = "y!muterole remove"
+
+command_logchannel_set_desc = "Kies het kanaal waar logberichten in verzonden worden"
+command_logchannel_set_usage = "y!logchannel set #logs"
+
+command_logchannel_remove_desc = "Verwijder het logkanaal"
+command_logchannel_remove_usage = "y!logchannel remove"
+
+command_goodbye_set_desc = "Kies het vaarwelbericht"
+command_goodbye_set_usage = "y!goodbye set Jammer je weg zien te gaan, %user%!"
+
+command_goodbye_remove_desc = "Verwijder het vaarwelbericht"
+command_goodbye_remove_usage = "y!goodbye remove"
+
+command_enable_desc = "Schakel een instelling in. Doe y!settings voor een lijst van schakelbare instellingen."
+command_enable_usage = "y!enable logging"
+
+command_disable_desc = "Schakel een instelling uit. Doe y!settings voor een lijst van schakelbare instellingen."
+command_disable_usage = "y!disable logging"
+
+command_customcommands_add_desc = "Voeg een eigen commando toe"
+command_customcommands_add_usage = "y!customcommands add <commandonaam> <antwoordbericht>\ny!ccommands add testcommando Testantwoord"
+
+command_customcommands_remove_desc = "Verwijder een eigen commando"
+command_customcommands_remove_usage = "y!customcommands remove testcommand\ny!ccommands remove testcommando"
+
+command_moderatorrole_add_desc = "Laat de bot weten dat een role een moderatorrole is"
+command_moderatorrole_add_usage = "y!moderatorrole set @Moderator\ny!modrole set @Moderator"
+
+command_moderatorrole_remove_desc = "Zorg dat de bot een role niet langer herkent als moderatorrole"
+command_moderatorrole_remove_usage = "y!moderatorrole remove @Moderator\ny!modrole remove @Moderator"
+
+command_administratorrole_add_desc = "Laat de bot weten dat een role een administratorrole is"
+command_administratorrole_add_usage = "y!administratorrole set @Administrator\ny!adminrole set @Administrator"
+
+command_administratorrole_remove_desc = "Zorg dat de bot een role niet langer herkent als administratorrole"
+command_administratorrole_remove_usage = "y!administratorrole remove @Administrator\ny!adminrole remove @Administrator"
+
+command_cache_ignore_desc = "Zorg dat de bot berichten in een kanaal niet meer cachet"
+command_cache_ignore_usage = "y!cache ignore #spoilers"
+
+command_cache_notice_desc = "Zorg dat de bot weer berichten in een kanaal cachet"
+command_cache_notice_usage = "y!cache notice #general\ny!cache notice #general"
+
+command_stats_desc = "Bekijk botstatistieken"
+command_stats_usage = "y!stats"
+
+command_filter_add_desc = "Voeg een regexfilter toe"
+command_filter_add_usage = "y!filter add kont\ny!filter add /\b(dit|zijn|slechte|woorden)\b/"
+
+command_filter_list_desc = "Bekijk de filters (tot en met 180 tekens) die je aan je server hebt toegevoegd"
+command_filter_list_usage = "y!filter list"
+
+command_filter_remove_desc = "Verwijder een filter (neemt een indexnummer vanuit y!filter list)"
+command_filter_remove_usage = "y!filter remove 2"
+
+command_starboard_requirement_desc = "Kies het aantal sterren dat nodig is om een bericht op starboard te krijgen"
+command_starboard_requirement_usage = "y!starboard requirement 5"
+
+command_starboard_channel_desc = "Kies het starboardkanaal"
+command_starboard_channel_usage = "y!starboard channel #starboard"
+
+command_starboard_ignore_desc = "Schakel starboard uit of in voor het huidige kanaal. Voer het commando opnieuw in om starboard in dit kanaal weer in te schakelen."
+command_starboard_ignore_usage = "y!starboard ignore"
+
+command_reactionrole_desc = "Voeg een reactierol toe"
+command_reactionrole_usage = "y!reactionrole :emote: Rolnaam"
+
+command_warningaction_add_desc = "Voeg een waarschuwingsactie toe"
+command_warningaction_add_usage = "y!warningaction add 1 ban\ny!warningaction add 1 kick\ny!warningaction add 1 giverole"
+
+command_warningaction_remove_desc = "Verwijder een waarschuwingsactie"
+command_warningaction_remove_usage = "y!warningaction remove 1"
+
+command_blacklist_add_desc = "Voeg een woord/Regexfilter toe aan de blacklist"
+command_blacklist_add_usage = "y!blacklist add porno"
+
+command_blacklist_remove_desc = "Verwijder een woord/Regexfilter van de blacklist (te doen via indexnummer!)"
+command_blacklist_remove_usage = "y!blacklist remove 1"
+
+
+command_scramblr_info_desc = "Krijg informatie over Scramblr"
+command_scramblr_info_usage = "y!scramblr info"
+        
+command_scramblr_enable_desc = "Schakel scramblr in"
+command_scramblr_enable_usage = "y!scramblr enable"
+
+command_scramblr_disable_desc = "Schakel scramblr uit"
+command_scramblr_disable_usage = "y!scramblr disable"
+
+command_addpatron_desc = "Registreer een gebruiker met een gespecificeerd ID als patron"
+command_addpatron_usage = "y!addpatron 1234567890"
+
+command_removepatron_desc = "Verwijder een gebruiker's patronstatus"
+command_removepatron_usage = "y!removepatron 1234567890"
+
+command_donators_desc = "Bekijk een lijst van mensen die aan Yuki gedoneerd hebben"
+command_donators_usage = "y!donators"
+
+#Strings
+require_permission_manage_roles = "Sorry! Ik heb de toestemming \"Manage Roles\" nodig om dit commando uit te voeren..."
+
+only_dm_channel = "Dit commando kan alleen in een DM-kanaal uitgevoerd worden."
+success = "Success!"
+none = "Geen"
+activity= "Activiteit"
+
+_true = "Ja"
+_false = "Nee"
+
+enable = "Inschakelen"
+disable = "Uitschakelen"
+
+enabled = "Ingeschakeld"
+disabled = "Uitgeschakeld"
+
+back = "terug"
+exit = "afsluiten"
+
+invisible = "Onzichtbaar"
+offline = "Offline"
+away = "Weg"
+donotdisturb = "Niet storen"
+
+listening = "Luistert naar"
+playing = "Speelt"
+streaming = "Streamt"
+watching = "Kijkt naar"
+
+error_occurred = "Een fout is opgetreden! Neem zo snel mogelijk contact op met mijn eigenaar zodat dit opgelost kan worden!"
+incorrect_response_string = "Incorrect antwoord!"
+
+ping_pinging = "Aan het pingen..."
+ping_pong = "Pong!"
+ping_latency = "Het antwoord duurde %latency%ms."
+ping_api_latency = "API-vertraging: %latency%ms"
+
+avatar_user_avatar = "%username_full%'s profielfoto"
+
+interactive_repeat_send_message = "Verstuur een bericht!"
+
+rammoe_hug = "%user%, je hebt een knuffel gekregen van %executor%!"
+rammoe_hug_alt = "%executor%, je wordt geknuffeld door %user%!"
+rammoe_pat = "%user% krijgt een klopje van %executor%!"
+rammoe_pat_alt = "%executor% was patted by %user%!"
+rammoe_slap = "%executor% sloeg %user%!"
+rammoe_slap_alt = " %user% wordt geslagen door %executor%!"
+rammoe_tickle = "%user% wordt gekieteld door %executor%!"
+rammoe_tickle_alt = "%executor% kietelt %user%!"
+
+poll_not_found = "Ik kon geen peiling vinden met het ID %id%!"
+poll_not_in_server = "Sorry! Ik kon niet voor deze peiling stemmen omdat je niet in de server zit waar deze peiling in is gemaakt."
+poll_ended = "Deze peiling is beëindigd."
+poll_vote = "Stem alsjeblieft (itemnummer of -naam) :"
+poll_unknown_item = "Peilingsitem onbekend!"
+poll_already_voted = "Je hebt al op deze peiling gestemd! Als je je stem wil aanpassen, typ \"ja\" en voer dit commando opnieuw uit."
+poll_response_recorded = "Je antwoord is opgenomen. Bedankt voor het meedoen! Om opnieuw te stemmen, voer het commando opnieuw uit met het peilings-ID."
+
+poll_create_creating = "Nieuwe peiling aan het aanmaken..."
+poll_create_created = "Peiling aangemaakt!"
+poll_creating_title_str = "Titel"
+poll_creating_items_str = "Items"
+poll_create_items_desc = "Items worden onderscheidt met | en moeten in ieder geval twee keuzes bevatten. Voorbeeld: optie 1 | optie 2 | optie 3"
+poll_creating_deadline_str = "Deadline"
+poll_create_deadline_desc = "Wanneer de peiling eindigt. Voorbeeld: 2d 1h 3m (deadline zal zijn in 2 dagen, 1 uur en 3 minutes vanaf nu)"
+poll_create_show_vote_str = "Geef stemmen weer"
+poll_create_show_vote_desc = "Moeten het aantal stemmen aan iedereen getoond worden? Antwoord y voor ja, en n voor nee."
+poll_create_title = "Wat is de titel van deze peiling?"
+poll_create_title_long = "De titel is te lang! Het moet minder dan 300 tekens zijn."
+poll_create_items = "Uit welke keuzes kan men kiezen?"
+poll_create_items_short = "Te weinig keuzes! Het moeten er minstens twee zijn."
+poll_create_deadline = "Wanneer eindigt deze peiling?"
+poll_create_deadline_invalid = "Dat is geen geldige datum!"
+poll_create_deadline_long = "De datum is te lang! Het mag maximaal twee weken vanaf nu zijn."
+poll_create_allow_view = "Moeten het aantal stemmen aan iedereen getoond worden?"
+poll_created_id = "Peilings-ID"
+
+serverinfo_owner = "Eigenaar"
+serverinfo_verification_level = "Verificatieniveau"
+serverinfo_region = "Regio"
+serverinfo_categories = "Categorieën"
+serverinfo_channels = "Kanalen"
+serverinfo_channels_text = "Tekstkanalen"
+serverinfo_channels_voice = "Stemkanalen"
+serverinfo_members = "Leden"
+serverinfo_online = "online"
+serverinfo_roles = "Roles"
+serverinfo_roles_view = "Om een lijst van roles te zien, voer y!serverroles uit"
+serverinfo_created = "Aangemaakt"
+
+eightball_response_title = "De magische 8Ball zegt"
+eightball_response_1 = "Het is vast en zeker."
+eightball_response_2 = "Zo is het beslist."
+eightball_response_3 = "Geen twijfel aan mogelijk."
+eightball_response_4 = "Ja - absoluut."
+eightball_response_5 = "Je kan erop rekenen."
+eightball_response_6 = "Zoals ik het zie, ja."
+eightball_response_7 = "Zeer waarschijnlijk."
+eightball_response_8 = "Ziet er goed uit."
+eightball_response_9 = "Ja."
+eightball_response_10 = "Alles wijst op ja."
+eightball_response_11 = "Antwoord is vaag, probeer het opnieuw."
+eightball_response_12 = "Vraag het later opnieuw."
+eightball_response_13 = "Ik kan het je beter niet nu vertellen."
+eightball_response_14 = "Ik kan het nu niet voorspellen."
+eightball_response_15 = "Concentreer je en vraag het opnieuw."
+eightball_response_16 = "Reken er maar niet op."
+eightball_response_17 = "Mijn antwoord is nee."
+eightball_response_18 = "Mijn bronnen zeggen van nee."
+eightball_response_19 = "Het ziet er niet zo goed uit."
+eightball_response_20 = "Erg betwijfelbaar."
+
+rolecol_bot_require_higher = "Ik kan deze role niet bewerken! Het is hoger dan mijn hoogste role :("
+rolecol_user_require_higher = "Ik kan deze role niet bewerken! Het is hoger dan jouw hoogste role :("
+rolecol_set = "Ik heb de kleur van `%rolename%` van %oldcol% naar %newcol% veranderd!"
+
+roulette_killed = "Sorry, %user%! Je bent geschoten!"
+roulette_safe = "%user%, you're safe!"
+roulette_not_current_player = "Sorry, %user%, je bent niet de huidige speler!"
+roulette_not_started = "Dit spel is nog niet begonnen! Om het te beginnen, voer \"y!roulette start\" uit."
+roulette_no_game = "Nog geen spel gemaakt! Om er een aan te maken, voer \"y!roulette join\" uit."
+roulette_game_over = "Sorry, %user%, je bent geschoten! Game Over!"
+roulette_error = "Oeps, er is een fout opgetreden! Neem alsjeblieft zo snel mogelijk contact op met mijn eigenaar!"
+roulette_playing = "Het spel is begonnen!"
+roulette_not_enough_players = "Er zijn niet genoeg spelers om dit spel te beginnen"
+roulette_not_game_master = "Het spijt me, maar dat kan je niet doen! Je moet de eigenaar van dit potje zijn."
+roulette_next_player = "%nuser%, er zijn %bullets% kamers over."
+roulette_winner = "%nuser%, je hebt gewonnen!"
+roulette_trigger_pulled = "%user% haalt de trekker over..."
+roulette_join_success = "Je doet aan het spel mee! Nog **%spotsleft%** spelers kunnen aan dit spel meedoen."
+roulette_join_fail = "Je kan niet meedoen aan dit spel!"
+roulette_quit = "%user% heeft het spel verlaten"
+roulette_player_kicked = "%user%, je bent uit dit spel geschopt"
+roulette_starting = "Het spel begint"
+
+coin_heads = "kop"
+coin_tails = "munt"
+coin_flipped = "%user%, je hebt een muntje opgegooid!"
+
+roll_rolled = "Je hebt een %dice% gegooit!"
+
+uinf_id = "ID"
+uinf_status = "Status"
+uinf_acc_create = "Account aangemaakt"
+uinf_acc_join = "Aansluitingsdag"
+uinf_permissions = "Servertoestemmingen"
+uinf_roles = "Roles [%count%]"
+
+roleinfo_id = "ID"
+roleinfo_position = "Positie"
+roleinfo_created = "Role aangemaakt"
+roleinfo_hoisted = "Los tentoongesteld"
+roleinfo_mentionable = "Aanspreekbaar"
+roleinfo_managed = "Beheerd door"
+roleinfo_permissions = "Toestemmingen"
+roleinfo_count = "Ledenaantal"
+
+
+modules_title = "Lijst van modules"
+modules_help = "Om commandos in een module te zien, gebruik het commando y!commands modulenaam"
+modules_count = "%cmds% commando(s)"
+
+commands_title = "Lijst van commando's"
+commands_help = "Om informatie over een commando weer te geven, gebruik het commando y!help commandonaam"
+commands_no_alias = "Geen pseudonym"
+
+help_title = "Hulp nodig?"
+help_aliases = "Pseudonymen"
+help_usage = "Gebruik"
+help_info_description = "Om mij aan je eigen server toe te voegen, [click here!](%botinvite%)\n\n\n• Voor een lijst van modules, gebruik `y!help list`\n• Om commando's in een module te bekijken, gebruik `y!help moduleName`\n\nGeïnteresseerd in het ondersteunen van Yuki's ontwikkeling en in wat extra's? Gebruik `y!donate`!\n\nEen bug rapporteren of heb je een verzoek? Word lid van mijn [ondersteuningsserver!](%serverinvite%)\n\nAls je meer informatie nodig hebt over het gebruiken van de bot en het beheren van instellingen, bekijk [de wiki](%wiki%)"
+help_description = "Omschrijving"
+
+remindme_success = ":thumbsup: Ontvangen, %user%! Ik zal herinneren je hieraan te herinneren:\n\n%reminder%"
+remindme_datetime_short = "Sorry! De tijd moet minstens 1 minuut zijn."
+
+pokemon_weight = "Gewicht"
+pokemon_height = "Hoogte"
+pokemon_base_exp = "Basis-EXP"
+pokemon_abilities = "Vaardigheden"
+pokemon_types = "Types"
+pokemon_evolution_chain = "Evolutieketen"
+pokemon_not_found = "Geen Pokémon gevonden met deze naam."
+
+donate_title = "Wil je me ondersteunen? Doneer!"
+donate_desc = "Als je geïnteresseerd ben in mijn ondersteuning, kan je een patron worden, of wat geld in de richting van mijn eigenaar gooien via PayPal!\n\n[Word een patron](%patreon%)\n[Doneer via PayPal](%paypal%)\n\nOm donatieëxtra's te krijgen, voeg je discordnaam en -tag bij het donatiebericht (bijvoorbeeld Vee#0003). Je kan elke hoeveelheid doneren, maar hou alsjeblieft in de gaten dat donaties onder de $1.00 niet voor donatierank beschikbaar gesteld zullen worden."
+
+source = "Bron"
+page = "Pagina"
+_explicit = "Expliciet"
+safe = "Veilig"
+
+user_banned = "***%user% is verbannen. Reden: %banreason%***"
+user_kicked = "***%user% is gekicked. Reden: %kickreason%***"
+user_unbanned = "***%user% is niet meer verbannen.***"
+user_muted = "***%user% is gedempt. Reden: %mutereason%***"
+user_unmuted = "***%user% is ongedempt.***"
+user_warned = "***%user% is gewaarschuwd. Reden: %warnreason%***"
+user_remwarn = "***%user% heeft een waarschuwing minder gekregen.***"
+no_reason = "Onbekende reden"
+
+clear_result = "%msgs% gewist!"
+
+mute_disabled = "Dempen is momenteel uitgeschakeld in deze server!"
+warnings_disabled = "Waarschuwingen zijn momenteel uitgeschakeld in deze server!"
+roles_disabled = "Kiesbare roles zijn momenteel uitgeschakeld in deze server!"
+
+scramblr_not_enabled = "Hey, %user%! Om scramblr te gebruiken, hebben we je toestemming nodig om de tekst in je berichten op te slaan. Dit is een erg korte uitleg. Als je er meer over wil lezen, voer y!scramblr info uit."
+scramblr_info = "om scramblr optimaal te laten werken, hebben we besloten maximaal 100 berichten per gebruiker (die dat toelaat, natuurlijk) op te slaan. Dit helpt de hoeveelheid herhaling te verminderen, en helpt de bot grappige antwoorden te geven! We weten dat het een beetje eng klinkt, dus hoef je het niet in te schakelen als je dat niet wil. Om het in te schakelen, voer `y!scramblr enable` uit. Als je het ooit wil uitschakelen, voer `y!scramblr disable` uit. Dan zal de opgeslagen informatie worden gewist."
+scramblr_enabled = "Scramblr is ingeschakeld! Het zal echter niet meteen werken - kom terug nadat je een beetje hebt gepraat en kijk of het wat grappigs kan genereren!"
+scramblr_disabled = "Scramblr is uitgeschakeld! Ik heb ook de opgeslagen berichten voor je gewist"
+
+slowmode_time_long = "De tijd is te lang! Moet maximaal 6 uur zijn"
+slowmode_disabled = "Slowmode is uitgeschakeld"
+slowmode_enabled = "Slowmode is ingeschakeld! De tijd is op %time% gezet"
+
+warnings_list_title = "Waarschuwingen"
+no_custom_commands = "Geen aangepaste commando's gevonden voor deze server"
+goodnight_title = "Welterusten, %user%!"
+langs_title = "Talen"
+remindme_incorrect_response_string = "Ongeldig antwoord!"
+role_given = "%user%, je hebt nu de `%rolename%` role"
+role_not_found = "%user%, ik kon geen role met de naam `%rolename%` vinden"
+roles_list_title = "Roles"
+lang_set_to = "Taal aangepast naar: %lang%"
+role_added = "%rolename% is toegevoegd als een kiesbare role"
+role_removed = "%rolename% is geen kiesbare role meer"
+moderator_role_added = "%rolename% is nu geregistreerd als een moderatorrole"
+moderator_role_removed = "%rolename% is geen moderatorrole meer"
+administrator_role_added = "%rolename% is nu geregistreerd als een administratorrole"
+administrator_role_removed = "%rolename% is geen administratorrole meer"
+
+command_added = "`%command%` aangemaakt!"
+command_removed = "`%command%` is geen eigen commando meer."
+setting_disabled = "%settingname% is uitgeschakeld"
+setting_enabled = "%settingname% is ingeschakeld"
+goodbye_message_set = "Vaarwelbericht is nu: %msg%"
+goodbye_message_removed = "Vaarwelbericht verwijderd"
+channel_not_found = "%channelname% niet gevonden"
+log_channel_added = "%channelname% is nu het logkanaal"
+log_channel_removed = "Logkanaal verwijderd"
+muterole_set = "De demprole is gezet als `%rolename%%"
+muterole_removed = "De demprole is niet langer meer `%rolename%`"
+welcome_channel_set = "Welkomstkanaal gezet naar %channelname%"
+welcome_channel_removed = "Welkomstkanaal is verwijderd"
+welcome_message_removed = "Welkomstbericht is verwijderd"
+
+team_role_state = "%rolename% teamrolestatus: %status%"
+
+# Events
+event_message_updated = "Message geüpdatet"
+event_message_id = "Bericht-ID"
+event_message_channel = "Kanaal"
+event_message_author = "Auteur"
+event_message_old = "Oud"
+event_message_new = "Nieuw"
+event_message_deleted = "Bericht verwijderd"
+message_attachment = "Bijlage"
+message_attachments = "Bijlages"
+message_content = "Inhoud"
+event_user_banned = "Lid verbannen"
+event_user_name = "Gebruiker"
+event_user_join = "Nieuw lid"
+event_user_leave = "Lid heeft de server verlaten"
+event_user_unban = "Lid niet meer verbannen"
+
+
+bot_stats_title = "Botstatistieken"
+bot_stats_users_unique = "Unieke gebruikers"
+bot_stats_guilds = "Servers"
+bot_stats_creator = "Eigenaar"
+bot_stats_uptime = "Leeftijd"
+bot_stats_shard = "Huidig fragment"
+bot_stats_memory = "Geheugenverbruik"
+
+filter_added = "Filter toegevoegd!"
+filter_removed = "Filter verwijderd!"
+event_filter_triggered = "Filter geactiveerd!"
+filter_triggered = "Bericht van %user% heeft een contentfilter geactiveerd!"
+role_taken = "%user%, Je hebt de role `%rolename%` niet meer!"
+welcome_message_set = "Welkomstbericht gezet naar %msg%"
+
+starboard_requirement_set = "Starboardbenodigdheid gekozen!"
+starboard_invalid_requirement = "Ongeldig nummer! Het moet minstens 1 zijn en maximaal 100"
+starboard_channel_set = "Starboardkanaal gekozen!"
+starboard_title = "Gesterde berichten"
+starboard_field_author = "Auteur"
+starboard_field_channel = "Kanaal"
+starboard_stars = "sterren"
+starboard_enabled_in_channel = "Starboard is ingeschakeld in dit kanaal."
+starboard_disabled_in_channel = "Starboard is uitgeschakeld in dit kanaal."
+starboard_channel_ignored = "Starboard is omgeschakeld voor dit kanaal. Status: %channel_status%"
+
+warningaction_added = "Waarschuwingsactie toegevoegd: %action%"
+warningaction_invalid_action = "Ongeldige actie!"
+warningaction_exists = "Waarschuwingsactie bestaat al! Verwijder het alsjeblieft eerst"
+warningaction_removed = "Waarschuwingsactie is verwijderd"
+warningaction_not_found = "Waarschuwingsactie niet gevonden!"
+warningaction_role_name = "Typ alsjeblieft de naam van de role die je voor deze actie zou willen plaatsen."
+
+patron_added = "Patron toegevoegd"
+patron_removed = "Patron verwijderd"
+patron_cmd_added = "Patroncommando toegevoegd"
+
+donators_none = "Er zijn op dit moment geen donateurs. Om te doneren, gebruik `y!donate`!"
+donators_title = "Donateurs"
+donators_footer = "Wil je je naam hier en wil je me ondersteunen? Gebruik `y!donate` en kom erachter hoe!"
+
+command_is_submodule = "Submodule"
+
+starboard_jump_to = "Spring"
+booster_since = "Booster sinds"
+archiving = "Archiveren... Dit *kan* lang duren, dus wees geduldig!"
+edited = "Bewerkt"
+archiving_done = "Archief compleet! Jouw bestand:"
+
+negastar_enabled_in_channel = "Negastar is ingeschakeld in dit kanaal!"
+negastar_disabled_in_channel = "Negastar is uitgeschakeld in dit kanaal!"
+negastar_channel_ignored = "Berichten in dit kanaal zullen niet langer beïnvloed worden door Negastar."
+negastar_requirement_set = "Negastarbenodigdheid gezet!"
+
+crash = "Ziet eruit naar dat Yuki gecrashed is! Hier is de log:"

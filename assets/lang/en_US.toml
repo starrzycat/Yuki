@@ -1,0 +1,669 @@
+Code = "en_US"
+
+#Commands
+command_avatar_desc = "Fetch a user's avatar"
+command_avatar_usage = "y!avatar | y!avatar @exampleuser#1234"
+
+command_ping_desc = "Pong! Find out the bot's latency"
+command_ping_usage = "y!ping"
+
+command_repeat_desc = "I repeat the next message you say!"
+command_repeat_usage = "y!repeat text"
+
+command_hug_desc = "Give or get a hug!"
+command_hug_usage = "y!hug"
+
+command_pat_desc = "Give or get a pat"
+command_pat_usage = "y!pat"
+
+command_slap_desc = "Give a slap"
+command_slap_usage = "y!slap"
+
+command_tickle_desc = "T-Tickle someone!"
+command_tickle_usage = "y!tickle"
+
+command_vote_desc = "Vote for a poll"
+command_vote_usage = "y!vote pollid\ny!vote pollid option"
+
+command_createpoll_desc = "Create a new poll for your users to vote in!"
+command_createpoll_usage = "y!createpoll\ny!createpoll title"
+
+command_serverinfo_desc = "Get information on a server"
+command_serverinfo_usage = "y!serverinfo"
+
+command_8ball_desc = "Shake an 8ball!"
+command_8ball_usage = "y!8ball\ny!8ball Will I ever get doughnuts?"
+
+command_config_desc = "Modify settings in your server"
+command_config_usage = "y!config"
+
+command_roulette_desc = "Pull the trigger in russian roulette"
+command_roulette_usage = "y!roulette"
+
+command_roulette_join_desc = "Join or start a game of Russian Roulette"
+command_roulette_join_usage = "y!roulette join"
+
+command_roulette_start_desc = "Start a game of russian roulette"
+command_roulette_start_usage = "y!roulette start"
+
+command_roulette_kick_desc = "Kick a player from a game of russuan roulette"
+command_roulette_kick_usage = "y!roulette kick @JoeCool777#1337"
+
+command_roulette_quit_desc = "Leave a game of russian roulette"
+command_roulette_quit_usage = "y!roulette quit"
+
+command_roulette_players_desc = "View current players"
+command_roulette_players_usage = "y!roulette players"
+
+command_toss_desc = "Toss a coin"
+command_toss_usage = "y!toss"
+
+command_roll_desc = "Roll the dice!"
+command_roll_usage = "y!roll"
+
+command_rolecol_desc = "Change a role's color"
+command_rolecol_usage = "y!rolecol role name hexcode"
+
+command_userinfo_desc = "Get information on a user"
+command_userinfo_usage = "y!userinfo\ny!userinfo @I_AM_AWESOME@6969"
+
+command_ban_desc = "Ban someone"
+command_ban_usage = "y!ban @genericuser#1234"
+
+command_kick_desc = "Kick someone from your server"
+command_kick_usage = "y!kick @genericuser2#3456"
+
+command_calculate_desc = "Perform simple calculations"
+command_calculate_usage = "y!calculate 2+2"
+
+command_choose_desc = "Pick between a set of options"
+command_choose_usage = "y!choose apple | banana"
+
+command_roleinfo_desc = "Get information on a role"
+command_roleinfo_usage = "y!roleinfo Admin"
+
+command_viewpoll_desc = "View a poll"
+command_viewpoll_usage = "y!viewpoll pollid"
+
+command_help_desc = "Learn a bit about how to use the bot, or get help on a command"
+command_help_usage = "y!help\ny!help commandName"
+
+command_commandlist_desc = "View a list of custom commands for a server"
+command_commandlist_usage = "y!commandlist"
+
+command_donate_desc = "Get links to donate to the developer"
+command_donate_usage = "y!donate"
+
+command_goodnight_desc = "Feeling sleepy?"
+command_goodnight_usage = "y!goodnight"
+
+command_langs_desc = "View a list of available languages"
+command_langs_usage = "y!langs"
+
+command_remindme_desc = "Create a reminder!"
+command_remindme_usage = "y!remindme Bake cookies in 30m"
+
+command_role_desc = "Assign a custom role set in a server"
+command_role_usage = "y!role WaterBuffalo"
+
+command_remwarn_desc = "Remove a warning from someone"
+command_remwarn_usage = "y!remwarn @JoeyWowey#4665"
+
+command_slowmode_desc = "Enable slowmdoe in a channel"
+command_slowmode_usage = "y!slowmode 5m"
+
+command_unmute_desc = "Unmute a member"
+command_unmute_usage = "y!unmute @JoeyWowey#4665"
+
+command_warn_desc = "Warn a member"
+command_warn_usage = "y!warn @JoeyWowey#4665 Stealing the cookies"
+
+command_mute_desc = "Mute a member"
+command_mute_usage = "y!mute @JoeyWowey#4665 30m Spam"
+
+command_warnings_desc = "View the warnings a member has"
+command_warnings_usage = "y!warnings @JoeyWowey#4665"
+
+command_roles_desc = "View the custom roles set in a server"
+command_roles_usage = "y!roles"
+
+command_clear_desc = "Clear messages in a channel"
+command_clear_usage = "y!clear 30"
+
+command_clear_from_desc = "Clear messages from a user in a channel"
+command_clear_from_usage = "y!clear from @JoeyWowey#4665 20"
+
+command_clear_with_desc = "Clear messages with a specified phrase"
+command_clear_with_usage = "y!clear with 30 LOL"
+
+command_emojify_desc = "Turn text into emojis"
+command_emojify_usage = "y!emojify hello world!"
+
+command_pokeinfo_desc = "Get info on a pokemon"
+command_pokeinfo_usage = "y!pokeinfo bulbasaur"
+
+command_reverse_desc = "Reverse txet"
+command_reverse_usage = "y!reverse text"
+
+command_scramblr_desc = "Tweet Mashup, but for Discord!"
+command_scramblr_usage = "y!scramblr\ny!scramblr @JoeyWowey#4665"
+
+command_setlang_desc = "Sets the response language for your server. Specify `default` to return to the default language."
+command_setlang_usage = "y!scramblr\ny!scramblr @JoeyWowey#4665"
+
+command_selfrole_add_desc = "Add a self-assignable role to your server"
+command_selfrole_add_usage = "y!selfrole add @Gamer\ny!selfrole add Gamer"
+
+command_selfrole_remove_desc = "Remove a role from the list of self-assignable roles in your server"
+command_selfrole_remove_usage = "y!selfrole remove @Gamer\ny!selfrole remove Gamer"
+
+command_welcome_setchannel_desc = "Set the channel welcome and goodbye messages are sent in"
+command_welcome_setchannel_usage = "y!welcome setchannel #welcome"
+
+command_welcome_removechannel_desc = "Remove the welcome channel"
+command_welcome_removechannel_usage = "y!welcome removechannel"
+
+command_welcome_setmsg_desc = "Set the welcome message. Add {user} to have the bot say the new member's username, and {user.mention} to mention the user."
+command_welcome_setmsg_usage = "y!welcome setmsg Welcome to the server, {user.mention}!"
+
+command_muterole_set_desc = "Set the role that gets assigned when someone is muted"
+command_muterole_set_usage = "y!muterole set @Muted"
+
+command_muterole_remove_desc = "Unassign the mute role"
+command_muterole_remove_usage = "y!muterole remove"
+
+command_logchannel_set_desc = "Set the channel log messages are sent to"
+command_logchannel_set_usage = "y!logchannel set #logs"
+
+command_logchannel_remove_desc = "Remove the log channel"
+command_logchannel_remove_usage = "y!logchannel remove"
+
+command_goodbye_set_desc = "Set the goodbye message"
+command_goodbye_set_usage = "y!goodbye set Sorry to see you go, {user}!"
+
+command_goodbye_remove_desc = "Remove the goodbye message"
+command_goodbye_remove_usage = "y!goodbye remove"
+
+command_enable_desc = "Enable a setting. Run y!settings for a list of togglable settings."
+command_enable_usage = "y!enable logging"
+
+command_disable_desc = "Disable a setting. Run y!settings for a list of togglable settings."
+command_disable_usage = "y!disable logging"
+
+command_customcommands_add_desc = "Add a custom command"
+command_customcommands_add_usage = "y!customcommands add <commandName> <response message>\ny!ccommands add testcommand Test Response"
+
+command_customcommands_remove_desc = "Remove a custom command"
+command_customcommands_remove_usage = "y!customcommands remove testcommand\ny!ccommands remove testcommand"
+
+command_moderatorrole_add_desc = "Make the bot recognize a role as a moderator role"
+command_moderatorrole_add_usage = "y!moderatorrole set @Moderator\ny!modrole set @Moderator"
+
+command_moderatorrole_remove_desc = "Make a role no longer recognized as a moderator role"
+command_moderatorrole_remove_usage = "y!moderatorrole remove @Moderator\ny!modrole remove @Moderator"
+
+command_administratorrole_add_desc = "Make the bot recognize a role as an administrator role"
+command_administratorrole_add_usage = "y!administratorrole set @Administrator\ny!adminrole set @Administrator"
+
+command_administratorrole_remove_desc = "Make a role no longer recognized as an administrator role"
+command_administratorrole_remove_usage = "y!administratorrole remove @Administrator\ny!adminrole remove @Administrator"
+
+command_cache_ignore_desc = "Make the bot not cache messages in a channel"
+command_cache_ignore_usage = "y!cache ignore #spoilers"
+
+command_cache_notice_desc = "Make the bot cache messages in a channel again"
+command_cache_notice_usage = "y!cache notice #general\ny!cache notice #general"
+
+command_stats_desc = "View bot stats"
+command_stats_usage = "y!stats"
+
+command_filter_add_desc = "Add a regex-supported filter"
+command_filter_add_usage = "y!filter add ass\ny!filter add /\b(these|are|bad|words|like|ass)\b/"
+
+command_filter_list_desc = "List the filters (up to 180 characters) you've added to your server"
+command_filter_list_usage = "y!filter list"
+
+command_filter_remove_desc = "Remove a filter (takes index listed in y!filter list)"
+command_filter_remove_usage = "y!filter remove 2"
+
+command_starboard_requirement_desc = "Set the number of stars required for a message to be added to the starboard"
+command_starboard_requirement_usage = "y!starboard requirement 5"
+
+command_starboard_channel_desc = "Set the starboard channel"
+command_starboard_channel_usage = "y!starboard channel #starboard"
+
+command_starboard_ignore_desc = "Enable or disable Starboard starring in a channel by running the command in that channel. Rerun the command to re-enable Starboard starring."
+command_starboard_ignore_usage = "y!starboard ignore"
+
+command_reactionrole_desc = "Add a reaction role"
+command_reactionrole_usage = "y!reactionrole :emote: Role Name"
+
+command_warningaction_add_desc = "Add a warning action"
+command_warningaction_add_usage = "y!warningaction add 1 ban\ny!warningaction add 1 kick\ny!warningaction add 1 giverole"
+
+command_warningaction_remove_desc = "Remove a warning action"
+command_warningaction_remove_usage = "y!warningaction remove 1"
+
+command_blacklist_add_desc = "Add a word/Regex filter to the blacklist"
+command_blacklist_add_usage = "y!blacklist add porn"
+
+command_blacklist_remove_desc = "Remove a blacklisted word/Regex filter (done by index!)"
+command_blacklist_remove_usage = "y!blacklist remove 1"
+
+
+command_scramblr_info_desc = "Get info on scramblr"
+command_scramblr_info_usage = "y!scramblr info"
+        
+command_scramblr_enable_desc = "Enable scramblr"
+command_scramblr_enable_usage = "y!scramblr enable"
+
+command_scramblr_disable_desc = "Disable scramblr"
+command_scramblr_disable_usage = "y!scramblr disable"
+
+command_addpatron_desc = "Register a user with a specified ID as a patron"
+command_addpatron_usage = "y!addpatron 1234567890"
+
+command_removepatron_desc = "Remove a user's patron status"
+command_removepatron_usage = "y!removepatron 1234567890"
+
+command_donators_desc = "Show a list of people that have donated to Yuki"
+command_donators_usage = "y!donators"
+
+command_purgedata_desc = "Deletes bot settings for this guild"
+command_purgedata_usage = "y!purgedata"
+
+command_channelfilter_add_desc = "Add a word to the filter for a channel"
+command_channelfilter_add_usage = "y!cfilter add #channel word\ny!cfilter add word"
+
+command_channelfilter_addregex_desc = "Add a regex expression to the filter for a channel"
+command_channelfilter_addregex_usage = "y!cfilter addregex #channel regex\ny!cfilter addregex regex"
+
+command_channelfilter_list_desc = "List the filters for a channel"
+command_channelfilter_list_usage = "y!cfilter list #channel\ny!cfilter list"
+
+command_channelfilter_remove_desc = "Remove a filter from a channel"
+command_channelfilter_remove_usage = "y!cfilter remove num\ny!cfilter remove num"
+
+command_inspire_desc = "Fetch an inspirational image from inspirobot.me"
+command_inspire_usage = "y!inspire"
+
+command_person_desc = "Fetch an AI generated picture of a person from thispersondoesnotexist.com"
+command_person_usage = "y!person"
+
+command_autorole_desc = "Make a role be given as soon as someone joins"
+command_autorole_usage = "y!autorole Role Name true\ny!autorole Role Name false"
+
+command_userreset_desc = "Resets Yuki data for the user who runs the command"
+command_userreset_usage = "y!userreset"
+
+command_prefix_desc = "Set a custom prefix (limited to 5 characters MAX)"
+command_prefix_usage = "y!prefix !"
+
+command_teamrole_desc = "Marks/Unmarks a role as a team role"
+command_teamrole_usage = "y!teamrole Red true\ny!teamrole Blue false"
+
+command_negastar_requirement_desc = "Sets the number of ❌ reactions required to delete a message"
+command_negastar_requirement_usage = "y!negastar requirement 5"
+
+command_negastar_ignore_desc = "Makes negastar not work in the channel the command is ran in"
+command_negastar_ignore_usage = "y!negastar ignore"
+
+command_wordfilter_addregex_desc = "Add a regular expression to the filter"
+command_wordfilter_addregex_usage = "y!wordfilter addregex p(i|ie)"
+
+command_cat_desc = "Sends a random cat image"
+command_cat_usage = "y!cat"
+
+command_dog_desc = "Sends a random dog image"
+command_dog_usage = "y!dog"
+
+command_scramblr2_desc = "Tweet Mashup, but for Discord! This version uses Markov chains"
+command_scramblr2_usage = "y!scramblr2\ny!scramblr2 @JoeyWowey#4665"
+
+command_addpatroncmd_desc = "[BOT OWNER ONLY] Adds a custom command for a patron"
+command_addpatroncmd_usage = "y!addpatroncmd 1234 example this is an example command"
+
+command_temp_desc = "Converts Fahrenheit to Celsius, and vice versa"
+command_temp_usage = "y!temp 30C\ny!temp 30F"
+
+
+# Strings
+require_permission_manage_roles = "Sorry! I need the permission Manage Roles to run this command."
+
+only_dm_channel = "This command can only be executed in a DM channel."
+success = "Success!"
+none = "None"
+activity= "Activity"
+
+_true = "Yes"
+_false = "No"
+
+enable = "Enable"
+disable = "Disable"
+
+enabled = "Enabled"
+disabled = "Disabled"
+
+back = "back"
+exit = "exit"
+
+invisible = "Invisible"
+offline = "Offline"
+away = "Away"
+donotdisturb = "Do Not Disturb"
+
+listening = "Listening To"
+playing = "Playing"
+streaming = "Streaming"
+watching = "Watching"
+
+error_occurred = "An error occurred! Contact my owner ASAP so this can get fixed"
+incorrect_response_string = "Incorrect response string!"
+
+ping_pinging = "Pinging..."
+ping_pong = "Pong!"
+ping_latency = "Took {latency}ms to respond."
+ping_api_latency = "API latency: {latency}ms"
+
+avatar_user_avatar = "{user}'s avatar"
+
+interactive_repeat_send_message = "Send a message!"
+
+rammoe_hug = "{user}, you got a hug from {executor}!"
+rammoe_hug_alt = "{executor}, you got a hug from {user}!"
+rammoe_pat = "{user} got a pat from {executor}!"
+rammoe_pat_alt = "{executor} was patted by {user}!"
+rammoe_slap = "{executor} slapped {user}!"
+rammoe_slap_alt = "{executor} got slapped by {user}!"
+rammoe_tickle = "{user} got tickled by {executor}!"
+rammoe_tickle_alt = "{executor} got tickled by {user}!"
+
+poll_not_found = "I couldn't find a poll with ID {id}!"
+poll_not_in_server = "Sorry! You can't vote for this poll because you're not in the server this poll was created in."
+poll_ended = "This poll has ended."
+poll_vote = "Please vote (item number or name) :"
+poll_unknown_item = "Poll item unknown!"
+poll_already_voted = "You've already voted for this poll! If you'd like to recase your vote, type \"yes\" and rerun this command."
+poll_response_recorded = "Your response has been recorded. Thank you for participating! To vote again, rerun the command with the poll ID."
+
+poll_create_creating = "Creating new poll..."
+poll_create_created = "Poll created!"
+poll_creating_title_str = "Title"
+poll_creating_items_str = "Items"
+poll_create_items_desc = "Items are separated by | and require at LEAST two choices. Example: option 1 | option 2 | option 3"
+poll_creating_deadline_str = "Deadline"
+poll_create_deadline_desc = "When the poll ends. Example: 2d 1h 3m (deadline will be 2 days, 1 hour, 3 minutes from now)"
+poll_create_show_vote_str = "Show votes"
+poll_create_show_vote_desc = "Should vote count on choices be shown to everyone? Answer y for yes, and n for no"
+poll_create_title = "What's the title of this poll?"
+poll_create_title_long = "Title too long! Has to be less than 300 characters."
+poll_create_items = "What are the items to choose from?"
+poll_create_items_short = "Too few choices! Must have at least two."
+poll_create_deadline = "When will this poll end?"
+poll_create_deadline_invalid = "Not a valid Date!"
+poll_create_deadline_long = "Date too long! Must be less than two weeks from now."
+poll_create_allow_view = "Should vote count on choices be shown to everyone?"
+poll_created_id = "Poll ID"
+
+serverinfo_owner = "Owner"
+serverinfo_verification_level = "Verification Level"
+serverinfo_region = "Region"
+serverinfo_categories = "Categories"
+serverinfo_channels = "Channels"
+serverinfo_channels_text = "Text Channels"
+serverinfo_channels_voice = "Voice Channels"
+serverinfo_members = "Members"
+serverinfo_online = "online"
+serverinfo_roles = "Roles"
+serverinfo_roles_view = "To view a list of roles, run y!serverroles"
+serverinfo_created = "Created"
+
+eightball_response_title = "Magic 8Ball says"
+eightball_response_1 = "It is certain."
+eightball_response_2 = "It is decidedly so."
+eightball_response_3 = "Without a doubt."
+eightball_response_4 = "Yes - definitely."
+eightball_response_5 = "You may rely on it."
+eightball_response_6 = "As I see it, yes."
+eightball_response_7 = "Most likely."
+eightball_response_8 = "Outlook good."
+eightball_response_9 = "Yes."
+eightball_response_10 = "Signs point to yes."
+eightball_response_11 = "Reply hazy, try again."
+eightball_response_12 = "Ask again later."
+eightball_response_13 = "Better not tell you now."
+eightball_response_14 = "Cannot predict now."
+eightball_response_15 = "Concentrate and ask again."
+eightball_response_16 = "Don't count on it."
+eightball_response_17 = "My reply is no."
+eightball_response_18 = "My sources say no."
+eightball_response_19 = "Outlook not so good."
+eightball_response_20 = "Very doubtful."
+
+rolecol_bot_require_higher = "I can't modify this role! It's higher than my highest :("
+rolecol_user_require_higher = "I can't modify this role! It's higher than your highest :("
+rolecol_set = "Successfully changed the color of `{rolename}` from {oldcol} to {newcol}"
+
+roulette_killed = "Sorry, {user}! You were shot!"
+roulette_safe = "{user}, you're safe!"
+roulette_not_current_player = "Sorry, {user}, you're not the current player!"
+roulette_not_started = "This game hasn't started yet! To start it, run \"y!roulette start\""
+roulette_no_game = "No game has been created! To create one, run \"y!roulette join\""
+roulette_game_over = "Sorry, {user}, you were shot! Game Over!"
+roulette_error = "Oops, an error occurred! Please contact my owner as soon as you can!"
+roulette_playing = "The game has began!"
+roulette_not_enough_players = "There are not enough players to start this game"
+roulette_not_game_master = "I'm sorry, but you can't do that! You must be the game master."
+roulette_next_player = "{nuser}, there are {bullets} chambers left."
+roulette_winner = "{nuser}, you win!"
+roulette_trigger_pulled = "{user} pulls the trigger..."
+roulette_join_success = "Successfully joined the game! **{spotsleft}** more players can join this game."
+roulette_join_fail = "You can't join this game!"
+roulette_quit = "{user} left the game"
+roulette_player_kicked = "{user}, you were kicked from the game"
+roulette_starting = "The game is starting"
+
+coin_heads = "heads"
+coin_tails = "tails"
+coin_flipped = "{user}, you flipped a coin!"
+
+roll_rolled = "You rolled a {diceval}!"
+
+uinf_id = "Id"
+uinf_status = "Status"
+uinf_acc_create = "Account Created"
+uinf_acc_join = "Join Date"
+uinf_permissions = "Guild Permissions"
+uinf_roles = "Roles [{count}]"
+
+roleinfo_id = "ID"
+roleinfo_position = "Position"
+roleinfo_created = "Role Created"
+roleinfo_hoisted = "Listed Separately"
+roleinfo_mentionable = "Mentionable"
+roleinfo_managed = "Managed by Discord"
+roleinfo_permissions = "Permissions"
+roleinfo_count = "Member Count"
+
+
+modules_title = "List of Modules"
+modules_help = "To view commands in a module, use the command y!help moduleName"
+modules_count = "{cmds} command(s)"
+
+commands_title = "List of Commands"
+commands_help = "To view information on a command, use the command y!help commandName"
+commands_no_alias = "No aliases"
+
+help_title = "Looking for help?"
+help_aliases = "Aliases"
+help_usage = "Usage"
+help_info_description = "To add me to your own server, [click here!]({botinvite})\n\n\n• For a list of modules, use `y!help list`\n• To view commands in a module, use `y!help moduleName`\n\nInterested in supporting my development and getting some perks? Use `y!donate`!\n\nNeed to report a bug or want to request a feature? Join my [support server!]({serverinvite})\n\nIf you need further information about how to use the bot and to manage settings, view [the wiki]({wiki})"
+help_description = "Description"
+
+remindme_success = ":thumbsup: Got it, {user}! I'll remember to remind you about this:\n\n{reminder}"
+remindme_datetime_short = "Sorry! The time must be greater than or equal to 1 minute."
+
+pokemon_weight = "Weight"
+pokemon_height = "Height"
+pokemon_base_exp = "Base EXP"
+pokemon_abilities = "Abilities"
+pokemon_types = "Types"
+pokemon_evolution_chain = "Evolution Chain"
+pokemon_not_found = "No pokemon found with this name"
+
+donate_title = "Wanna support me? Donate!"
+donate_desc = "If you're interested in supporting me, you can become a patron or send some some money to my creator through PayPal!\n\n[Become a patron]({patreon})\n[Donate through PayPal]({paypal})\n\nTo get donator perks, include your discord name and tag in your donation message (ie Vee#0003). You can donate any amount, but please keep in mind that donations under $1.00 will not be considered for the donator's rank."
+
+source = "Source"
+page = "Page"
+_explicit = "Explicit"
+safe = "Safe"
+
+user_banned = "***{user} has been banned. Reason: {banreason}***"
+user_kicked = "***{user} has been kicked. Reason: {kickreason}***"
+user_unbanned = "***{user} has been unbanned.***"
+user_muted = "***{user} has been muted. Reason: {mutereason}***"
+user_unmuted = "***{user} has been unmuted.***"
+user_warned = "***{user} has been warned. Reason: {warnreason}***"
+user_remwarn = "***{user} has had a warning removed.***"
+no_reason = "Unknown Reason"
+
+clear_result = "{amount} messages cleared!"
+
+mute_disabled = "Muting is currently disabled on this server!"
+warnings_disabled = "Warnings are currently disabled on this server!"
+roles_disabled = "Assignable roles are currently disabled on this server!"
+
+scramblr_not_enabled = "Hey, {user}! In order to use scramblr, we need your permission to store the text in your messages. This is a very brief explanation, if you want to read more about it, run y!scramblr info."
+scramblr_info = "In order for scramblr to work optimally, we've decided to store a maximum amount of 100 messages per user (who allows us to, of course). This helps reduce the amount of repetition, and can help make some funny responses from the bot! We know it sounds a little scary, so you don't have to enable it if you don't want to. To enable, run `y!scramblr enable`. If you want to opt out at any time, run `y!scramblr disable` and the stored information will be cleared."
+scramblr_enabled = "Scramblr's been enabled! It won't work right away, though - come back after talking for a little bit and see if I can make something funny!"
+scramblr_disabled = "Scramblr's been disabled! I've also gone ahead and cleared the messages stored"
+
+warnings_list_title = "Warnings"
+no_custom_commands = "No custom commands found for this server"
+goodnight_title = "Goodnight, {user}!"
+langs_title = "Languages"
+remindme_incorrect_response_string = "Incorrect response string!"
+role_given = "{user}, you now have the `{role}` role"
+role_not_found = "{user}, I couldn't find a role with the name `{role}`"
+roles_list_title = "Roles"
+lang_set_to = "The language for this server is now {lang}"
+role_added = "{rolename} has been added as a self-assignable role"
+role_removed = "{rolename} is no longer a self-assignable role"
+moderator_role_added = "{rolename} is now registered as a moderator role"
+moderator_role_removed = "{rolename} is no longer a moderator role"
+administrator_role_added = "{rolename} is now registered as an administrator role"
+administrator_role_removed = "{rolename} is no longer an adminsitrator role"
+
+command_added = "`{command}` was created successfully!"
+command_removed = "`{command}` is no longer a custom command."
+setting_disabled = "{settingname} has been disabled"
+setting_enabled = "{settingname} has been enabled"
+goodbye_message_set = "Goodbye message has been set to: {msg}"
+goodbye_message_removed = "Goodbye message removed"
+channel_not_found = "No channel with the name `{channelname}` was found"
+log_channel_added = "{channelname} is now the log channel"
+log_channel_removed = "Log channel has been removed"
+muterole_set = "Mute Role has been set to `{rolename}`"
+muterole_removed = "Mute Role is no longer `{rolename}`"
+welcome_channel_set = "Welcome channel set to {channelname}"
+welcome_channel_removed = "Welcome channel has been removed"
+welcome_message_removed = "Welcome message has been removed"
+
+team_role_state = "{role} team role status has been set to {status}, and is part of group {group}"
+
+# Events
+event_message_updated = "Message Updated"
+event_message_id = "Message ID"
+event_message_channel = "Channel"
+event_message_author = "Author"
+event_message_old = "Old"
+event_message_new = "New"
+event_message_deleted = "Message Deleted"
+message_attachment = "Attachment"
+message_attachments = "Attachments"
+message_content = "Content"
+event_user_banned = "Member Banned"
+event_user_name = "User"
+event_user_join = "New Member"
+event_user_leave = "Member Left"
+event_user_unban = "Member Unbanned"
+
+
+bot_stats_title = "Bot Statistics"
+bot_stats_users_unique = "Unique Users"
+bot_stats_guilds = "Guilds"
+bot_stats_creator = "Creator"
+bot_stats_uptime = "Uptime"
+bot_stats_shard = "Currrent Shard"
+bot_stats_memory = "Memory Usage"
+
+filter_added = "Filter added!"
+filter_removed = "Filter removed!"
+event_filter_triggered = "Filter Triggered"
+role_taken = "{user}, you no longer have role `{role}`"
+welcome_message_set = "Welcome message has been set to \"{msg}\""
+
+starboard_requirement_set = "Starboard requirement set!"
+starboard_invalid_requirement = "Invalid number! Must be at least 1 and at most 100"
+starboard_channel_set = "Starboard channel set!"
+starboard_title = "Starred Content"
+starboard_field_author = "Author"
+starboard_field_channel = "Channel"
+starboard_stars = "stars"
+starboard_enabled_in_channel = "Starboard starring is enabled in this channel."
+starboard_disabled_in_channel = "Starboard starring is disabled in this channel."
+starboard_channel_ignored = "Starboard starring has been toggled for this channel. Status: {channel_status}"
+
+warningaction_added = "Added warning action {action}"
+warningaction_invalid_action = "Action invalid!"
+warningaction_exists = "Warning action already exists! Please remove it first."
+warningaction_removed = "Warning action removed"
+warningaction_not_found = "Warning action not found!"
+warningaction_role_name = "Please type the name of the role you'd like to set for this action."
+
+patron_added = "Patron added"
+patron_removed = "Patron removed"
+patron_cmd_added = "Patron command added"
+
+donators_none = "There are currently no donators. To donate, use y!donate!"
+donators_title = "Donators"
+donators_footer = "Wanna get your name here and support me? Use y!donate to find out how!"
+
+command_is_submodule = "Submodule"
+
+starboard_jump_to = "Jump to"
+booster_since = "Booster Since"
+archiving = "Archiving...This *might* take a long time, so be patient!"
+edited = "Edited"
+archiving_done = "Archival complete! Your file:"
+
+negastar_enabled_in_channel = "Negastar is enabled in this channel!"
+negastar_disabled_in_channel = "Negastar is disabled in this channel!"
+negastar_channel_ignored = "Messages will no longer be affected by Negastar in this channel"
+negastar_requirement_set = "Negastar requirement set!"
+
+crash = "Looks like Yuki crashed! Here's the log:"
+top_posts = "Top {count} posts of {month}"
+star_count = "{stars} stars"
+
+guild_data_deleted = "Bot settings for this guild have been deleted"
+user_data_deleted = "User data reset"
+cant_scramble_bots = "Can't scramble bots!"
+main_few_msgs = "{user}, you don't have enough messages to scramble!"
+other_few_msgs = "{user} doesn't have enough messages to scramble!"
+no_matches = "No matches found"
+
+language_not_found = "Language not found!"
+cat_title = "A cat image just for you, meow!"
+dog_title = "Who let the dogs out?"
+
+prefix_less_than_five = "Prefix must be less than 5 characters!"
+command_exists = "`{command}` cannot be added because it already exists!"
+cache_channel_ignored = "Message caching has been disabled for {channel}! Any previously stored messages have been cleared."
+cache_channel_noticed = "Messages in {channel} will now be cached again for people with scamblr enabled"
+auto_role_state = "{role} autorole status has been set to {status}"
+group_role_create = "What group is this role a part of ('d' or 'default' for default)"
+role_removable = "Should members be able to remove this role if it's set as self-assignable (y/n)?"
+temp_invalid = "Value is either invalid or not a supported temperature"
+goodnight_title_mentioned = "{mentioned_user}, {user} wishes you a good night!"
