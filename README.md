@@ -1,5 +1,6 @@
 This README is left (mostly) unedited for archival purposes.
-The code hasn't been touched since around 2020 and is likely very broken.
+This version of Yuki was worked on during 2017-2020.
+The project hasn't been touched since around 2020 and is likely very broken.
 
 -----
 
