@@ -1,7 +1,8 @@
 This README is left (mostly) unedited for archival purposes.
 The code hasn't been touched since around 2020 and is likely very broken.
 
-======================================================================================
+-----
+-----
 
 This is the branch for Yuki v2.0, a WIP complete rewrite for Yuki.
 
