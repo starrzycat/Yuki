@@ -9,7 +9,6 @@ This is the branch for Yuki v2.0, a WIP complete rewrite for Yuki.
 - Polling
 - View server information
 - Shake an 8ball
-- NSFW commands
 
 
 Because 2.0 is a *complete* rewrite, work on adding commands might be a bit slow. I've switched over from using Discord.Commands to using Qmmands, so there might be things I need to reimplement.
@@ -42,6 +41,3 @@ If you have any feature requests, please join the Discord and mention them!
 
 
 Feel generous?
-
-
-[Paypal](https://www.paypal.me/veenus2247) | [Patreon page](https://www.patreon.com/veethree)
