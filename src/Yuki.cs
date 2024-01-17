@@ -1,3 +1,4 @@
+using System.Reflection;
 using Discord;
 using Discord.Commands;
 using Discord.Interactions;
@@ -12,14 +13,21 @@ namespace Yuki {
         public static readonly CommandService Commands = Services.GetRequiredService<CommandService>();
         public static readonly InteractionService Interactions = Services.GetRequiredService<InteractionService>();
         public static readonly LoggingService Log = Services.GetRequiredService<LoggingService>();
+        public static readonly Config Config = Config.FromFile("data/config.toml");
 
         private static IServiceProvider ConfigureServices() {
             var discordConfig = new DiscordConfig() {
 
             };
 
+            var interactionConfig = new InteractionServiceConfig() {
+                AutoServiceScopes = true
+            };
+            
+
             var collection = new ServiceCollection()
                     .AddSingleton(discordConfig)
+                    .AddSingleton(interactionConfig)
                     .AddSingleton<DiscordSocketClient>()
                     .AddSingleton<CommandService>()
                     .AddSingleton<InteractionService>()
@@ -29,20 +37,39 @@ namespace Yuki {
         }
 
         public async Task RunYukiAsync() {
-            string token = "token";
-
             Client.Ready += ClientReady;
 
-            await Client.LoginAsync(TokenType.Bot, token);
-            await Client.StartAsync();
+            if (Config.Token != null) {
+                await Client.LoginAsync(TokenType.Bot, Config.Token);
+                await Client.StartAsync();
 
-            await Task.Delay(Timeout.Infinite);
+                await Task.Delay(Timeout.Infinite);
+            }
+
+            await Task.CompletedTask;
         }
 
         private async Task ClientReady() {
             Console.WriteLine("OK");
 
+            await Interactions.AddModulesAsync(Assembly.GetEntryAssembly(), Services);
 
+
+            #if DEBUG
+                if (Config.DevGuild != 0) {
+                    await Interactions.RegisterCommandsToGuildAsync(Config.DevGuild);
+                } else {
+                    Console.WriteLine("DevGuild not set; commands will not be registered");
+                }
+            #else
+                await Interactions.RegisterCommandsGloballyAsync();
+            #endif
+
+            Client.InteractionCreated += async interaction => {
+                var ctx = new SocketInteractionContext(Client, interaction);
+                
+                await Interactions.ExecuteCommandAsync(ctx, Services);
+            };
 
             await Task.CompletedTask;
         }
