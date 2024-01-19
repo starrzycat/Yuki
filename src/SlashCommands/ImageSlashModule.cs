@@ -3,19 +3,7 @@ using Discord.Interactions;
 using Newtonsoft.Json;
 
 namespace Yuki.SlashCommands {
-    using IJsonResult = Result<IJsonDeserializable, JsonDeserializableError>;
-
-    public enum JsonDeserializableErrorType {
-        CouldNotFetch,
-        CouldNotParse,
-        HttpResponseError,
-        JsonNullOrEmpty
-    }
-
-    public struct JsonDeserializableError {
-        public JsonDeserializableErrorType Type;
-        public string Message;
-    }
+    using IJsonResult = Result<IJsonDeserializable, string>;
 
     public interface IJsonDeserializable {
         public static async Task<IJsonResult> GetJson<T>(string url) where T : IJsonDeserializable, new() {
@@ -28,10 +16,7 @@ namespace Yuki.SlashCommands {
             try {
                 responseMessage = await client.GetAsync(url);
             } catch (Exception exp) {
-                return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                    Type = JsonDeserializableErrorType.HttpResponseError,
-                    Message = $"Http request failed with the following error: {exp.Message}"
-                });
+                return Result.Failure<IJsonDeserializable, string>($"Http request failed with the following error: {exp.Message}");
             }
 
             if (responseMessage.IsSuccessStatusCode) {
@@ -44,23 +29,14 @@ namespace Yuki.SlashCommands {
                         return data;
                     }
                     else {
-                        return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                            Type = JsonDeserializableErrorType.CouldNotFetch,
-                            Message = $"Json parse failed with the following error: {data.Error}"
-                        });
+                        return Result.Failure<IJsonDeserializable, string>($"Json parse failed with the following error: {data.Error}");
                     }
                 } catch(Exception exp) {
-                    return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                        Type = JsonDeserializableErrorType.CouldNotParse,
-                        Message = $"Could not convert json to the specified data type: {exp.Message}"
-                    });
+                    return Result.Failure<IJsonDeserializable, string>($"Could not convert json to the specified data type: {exp.Message}");
                 }
             }
             else {
-                return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                    Type = JsonDeserializableErrorType.JsonNullOrEmpty,
-                    Message = $"Json fetch returned status code {responseMessage.StatusCode}"
-                });
+                return Result.Failure<IJsonDeserializable, string>($"Json fetch returned status code {responseMessage.StatusCode}");
             }
         }
 
@@ -79,13 +55,10 @@ namespace Yuki.SlashCommands {
             var data = JsonConvert.DeserializeObject<CatObject[]>(jsonString);
             
             if (data != null && data.Length > 0) {
-                return Result.Success<IJsonDeserializable, JsonDeserializableError>(data[0]);
+                return Result.Success<IJsonDeserializable, string>(data[0]);
                 // do something
             } else {
-                return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                    Type = JsonDeserializableErrorType.JsonNullOrEmpty,
-                    Message = $"Data is null or has a length of 0"
-                });
+                return Result.Failure<IJsonDeserializable, string>("Data is null or has a length of 0");
             }
         }
 
@@ -102,12 +75,9 @@ namespace Yuki.SlashCommands {
             var data = JsonConvert.DeserializeObject<DogObject>(jsonString);
             
             if (data.Status == "success") {
-                return Result.Success<IJsonDeserializable, JsonDeserializableError>(data);
+                return Result.Success<IJsonDeserializable, string>(data);
             } else {
-                return Result.Failure<IJsonDeserializable, JsonDeserializableError>(new JsonDeserializableError {
-                    Type = JsonDeserializableErrorType.JsonNullOrEmpty,
-                    Message = $"API returned status {data.Status}"
-                });
+                return Result.Failure<IJsonDeserializable, string>($"API returned status {data.Status}");
             }
         }
 
@@ -146,7 +116,7 @@ namespace Yuki.SlashCommands {
                     
                     await RespondAsync(jsonResult.GetUrl());
                 } else {
-                    await RespondAsync(result.Error.Message);
+                    await RespondAsync(result.Error);
                 }
             } else {
                 await RespondAsync("Cannot fetch image (unimplemented type)");
