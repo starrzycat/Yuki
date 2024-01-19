@@ -11,7 +11,7 @@ namespace Yuki.Services {
 
         private Task LogAsync(LogMessage msg) {
             if (msg.Exception is CommandException cmdEx) {
-                Console.WriteLine($"[Command/{msg.Severity}] {cmdEx.Command.Aliases.First()} failed to execute in {cmdEx.Context.Channel}.");
+                Console.WriteLine($"[Command/{msg.Severity}] {cmdEx.Command.Aliases[0]} failed to execute in {cmdEx.Context.Channel}.");
                 Console.WriteLine(cmdEx);
             } else {
                 Console.WriteLine($"[General/{msg.Severity}] {msg}");
